@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a83c7b3631.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>To Do List Here!</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="main-header">
+        <div class="heading-title">
+          <h1>Daily Planner</h1>
+          <div class="line"></div>
+          <p class="heading-p">Small changes make a Big Change!</p>
+        </div>
+        <nav>
+          <a href="#" class="heading-nav">Year Resolution</a>
+          <a href="#" class="heading-nav">Monthly Goals</a>
+          <a href="#" class="heading-nav current">Daily Plans</a>
+        </nav>
+      </header>
+      <section class="card">
+        <div class="card-calendar">
+          <div class="calendar">
+            <h2 class="month-name">
+              January 2022 <i class="fas fa-caret-down"></i>
+            </h2>
+            <div class="calendar-row">
+              <div class="calendar-col">
+                <a href="#" class="cal-heading">Mo</a>
+                <a href="#" class="cal-heading">Tue</a>
+                <a href="#" class="cal-heading">Wed</a>
+                <a href="#" class="cal-heading">Thu</a>
+                <a href="#" class="cal-heading">Fri</a>
+                <a href="#" class="cal-heading">Sat</a>
+                <a href="#" class="cal-heading">Sun</a>
+              </div>
+              <div class="calendar-col">
+                <a href="#">&nbsp;</a>
+                <a href="#">&nbsp;</a>
+                <a href="#">&nbsp;</a>
+                <a href="#">&nbsp;</a>
+                <a href="#">&nbsp;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+              </div>
+              <div class="calendar-col">
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#" class="current-day">9</a>
+              </div>
+              <div class="calendar-col">
+                <a href="#">10</a>
+                <a href="#">11</a>
+                <a href="#">12</a>
+                <a href="#">13</a>
+                <a href="#">14</a>
+                <a href="#">15</a>
+                <a href="#">16</a>
+              </div>
+              <div class="calendar-col">
+                <a href="#">17</a>
+                <a href="#">18</a>
+                <a href="#">19</a>
+                <a href="#">20</a>
+                <a href="#">21</a>
+                <a href="#">22</a>
+                <a href="#">23</a>
+              </div>
+              <div class="calendar-col">
+                <a href="#">24</a>
+                <a href="#">25</a>
+                <a href="#">26</a>
+                <a href="#">27</a>
+                <a href="#">28</a>
+                <a href="#">29</a>
+                <a href="#">30</a>
+              </div>
+              <div class="calendar-col">
+                <a href="#">31</a>
+                <a href="#">&nbsp;</a>
+                <a href="#">&nbsp;</a>
+                <a href="#">&nbsp;</a>
+                <a href="#">&nbsp;</a>
+                <a href="#">&nbsp;</a>
+                <a href="#">&nbsp;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-lists">
+          <div class="search">
+            <div class="card-lists-search">
+              <form id="search-form" action="##">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Search Task.."
+                  required
+                />
+                <button type="submit" class="btn-search">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="card-lists-content">
+            <div class="new-task form-idle">
+              <form id="input-form" action="#">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="task"
+                    id="task"
+                    class="task-idle"
+                    placeholder="Add a new task . . ."
+                    required
+                  />
+                  <button type="submit" class="btn-add btn-idle">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="task-lists scroll-overlay">
+              <ul class="collection">
+                <li class="collection-item">
+                  Item List
+                  <a href="#" class="remove-item"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </li>
+                <li class="collection-item">
+                  Item List
+                  <a href="#" class="remove-item"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="btn-clear">Clear Tasks</a>
+        </div>
+      </section>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/user-interface.js"></script>
+  </body>
+</html>
